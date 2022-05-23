@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+          <h2 class="logo">Travel</h2>
+          <p id="my">with Akram</p>
+          <div class="toggle"></div>
+        </header>
+        <video src="forest_waterfall.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>Never Stop To </h2> 
+          <h3>Exploring The World</h3>
+          <p>“Life is either a daring adventure or nothing.” Excite your senses with the love of traveling. You cannot fathom the versatile mix of emotion a traveler feels until you, yourself take the plunge and experience the rush.</p>
+          <a href="https://holidify.com" target="_blank">Explore</a>
+        </div>
+        <ul class="social">
+          <li><a href="#"><img src="facebook.png"></a></li>
+          <li><a href="https://twitter.com/ak_r_a_m_7"><img src="twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/ak_r_a_m_7/"><img src="instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="http://hometogo.com">Home</a></li>
+          <li><a href="https://edition.cnn.com/TRAVEL/NEWS">News</a></li>
+          <li><a href="https://www.planetware.com">Destination</a></li>
+          <li><a href="https://www.trivago.in" target="_blank">Blog</a></li>
+          <li><a href="https://www.trivago.in">Contact</a></li>
+        </ul>
+      </div>
+
+      <script>
+          const menuToggle = document.querySelector('.toggle,#my');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+      </script>
+</body>
+</html>
